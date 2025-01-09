@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    /* Aligne les éléments en colonne */
+    justify-content: center;
+    /* Centre verticalement les éléments */
+    align-items: center;
+    /* Centre horizontalement les éléments */
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    text-align: center;
+    /* Centre horizontalement les éléments à l'intérieur */
+}
+
+h1 {
+    margin-bottom: 20px;
+    /* Espace entre le titre et le conteneur */
+    color: #333;
+    /* Couleur du texte */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.animal {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.stats {
+    margin-bottom: 20px;
+}
+
+.stat {
+    margin: 10px 0;
+}
+
+.stat label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+progress {
+    width: 100%;
+    height: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #76c7c0;
+    border-radius: 5px;
+}
+
+.actions button {
+    background: #76c7c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.actions button:hover {
+    background: #5aa8a3;
+}
+
+.messages {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 20px;
+    min-height: 40px;
+}
+
+.sleep-animation {
+    transform: rotate(360deg);
+}
+
+.drink-animation {
+    transform: rotate(180deg);
+}
+
+.jump-animation {
+    transform: translateY(-20px);
+}
+
+.shake-animation {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}

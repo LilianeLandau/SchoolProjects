@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tama Gotcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Un Tamagochi avec TypeScript</h1>
+    <div class="container">
+        <div class="card">
+            <div id="animal" class="animal">🐱</div>
+            <div class="stats">
+                <div class="stat">
+                    <label for="hunger">Faim</label>
+                    <progress id="hunger" max="100" value="50"></progress>
+                </div>
+                <div class="stat">
+                    <label for="thirst">Soif</label>
+                    <progress id="thirst" max="100" value="50"></progress>
+                </div>
+                <div class="stat">
+                    <label for="happiness">Bonheur</label>
+                    <progress id="happiness" max="100" value="80"></progress>
+                </div>
+                <div class="stat">
+                    <label for="energy">Énergie</label>
+                    <progress id="energy" max="100" value="60"></progress>
+                </div>
+            </div>
+            <div class="actions">
+                <button id="feed">🍕 Nourrir</button>
+                <button id="drink">🍹 Boire</button>
+                <button id="play">🎾 Jouer</button>
+                <button id="sleep">😴 Dormir</button>
+            </div>
+            <div class="messages">
+                <p id="message">Bienvenue ! Prenez soin de votre animal !</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
